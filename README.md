@@ -25,7 +25,7 @@ It parses exported browser session cookies, automatically handles authentication
 pip install requests
 ```
 
-#Usage
+## Usage
 1. Export Session Cookies
 
     Log in to your account at chat.qwen.ai.
@@ -34,24 +34,8 @@ pip install requests
 
     Save the exported file locally (e.g., cookies.txt).
 
-2. Run the Exporter
-
-Run the script by supplying the path to your cookie file:
-Bash
+2. Run the Exporter :
 
 python3 qwen_exporter.py cookies.txt
-
-To specify a custom output directory:
-Bash
-
+## OR
 python3 qwen_exporter.py cookies.txt -o my_qwen_backup
-
-📂 Output Structure
-
-The tool creates the specified output directory (defaulting to qwen_exports/) and populates it as follows:
-
-qwen_exports/
-├── _index_chats.json        # Full list of discovered chats with metadata
-├── 8a2f1b4c-....json        # Full JSON payload for conversation #1
-├── 3d5e7f9a-....json        # Full JSON payload for conversation #2
-└── ...
